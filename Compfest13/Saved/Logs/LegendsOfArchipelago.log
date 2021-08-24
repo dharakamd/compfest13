@@ -5001,3 +5001,1120 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.08.24-17.01.13:275][ 24]LogUObjectHash: Compacting FUObjectHashTables data took   2.73ms
 [2021.08.24-17.01.13:923][ 24]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
 [2021.08.24-17.03.59:914][576]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2021.08.24-17.04.33:088][275]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2021.08.24-17.05.58:057][436]MapCheck: New page: Map Check
+[2021.08.24-17.05.58:498][436]LightingResults: New page: Lighting Build - Aug 25, 2021, 7:05:58 AM
+[2021.08.24-17.06.15:582][436]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.08.24-17.06.19:105][436]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.08.24-17.06.20:050][436]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.08.24-17.06.24:989][436]LogSwarmInterface: Error: [TryOpenConnection] Waiting for the agent to start up ...
+[2021.08.24-17.06.25:518][436]LogSwarmInterface: Error: System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:8008
+
+Server stack trace: 
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Runtime.Remoting.Channels.RemoteConnection.CreateNewSocket(EndPoint ipEndPoint)
+   at System.Runtime.Remoting.Channels.SocketCache.GetSocket(String machinePortAndSid, Boolean openNew)
+   at System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.SendRequestWithRetry(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream)
+   at System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.AsyncProcessRequest(IClientChannelSinkStack sinkStack, IMessage msg, ITransportHeaders headers, Stream stream)
+   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at NSwarm.IAgentInterfaceWrapper.MethodDelegate.EndInvoke(Hashtable& OutParameters, IAsyncResult result)
+   at NSwarm.FSwarmInterface.TryOpenConnection(FConnectionCallback CallbackFunc, IntPtr CallbackData, ELogFlags LoggingFlags) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Editor\SwarmInterface\DotNET\SwarmInterface.cs:line 2811
+[2021.08.24-17.06.31:306][436]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.08.24-17.06.31:306][436]LogSwarmInterface: [TryOpenConnection] Local Process ID is 5452
+[2021.08.24-17.06.51:588][436]LightingResults: Warning: No importance volume found and the scene is so large that the automatically synthesized volume will not yield good results.  Please add a tightly bounding lightmass importance volume to optimize your scene's quality and lighting build times.
+[2021.08.24-17.06.51:589][436]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.08.24-17.06.51:589][436]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.08.24-17.06.51:589][436]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.08.24-17.06.51:589][436]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.08.24-17.06.51:589][436]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.08.24-17.07.01:637][436]LogEditorBuildUtils: Build time 1:03
+[2021.08.24-17.07.02:586][436]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MI_Water, compiling. 
+[2021.08.24-17.07.03:172][436]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer MI_Water, compiling. 
+[2021.08.24-17.07.03:411][436]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 2
+[2021.08.24-17.07.03:411][436]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 1
+[2021.08.24-17.07.03:611][437]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
+[2021.08.24-17.07.03:670][437]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
+[2021.08.24-17.07.03:722][438]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56, compiling. 
+[2021.08.24-17.07.03:734][438]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56, compiling. 
+[2021.08.24-17.07.04:147][444]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Palm, compiling. 
+[2021.08.24-17.07.04:263][444]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Palm, compiling. 
+[2021.08.24-17.07.04:291][445]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Rock1, compiling. 
+[2021.08.24-17.07.04:296][445]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Rock1, compiling. 
+[2021.08.24-17.07.04:356][445]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Rock2, compiling. 
+[2021.08.24-17.07.04:360][445]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Rock2, compiling. 
+[2021.08.24-17.07.04:407][446]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Rock3, compiling. 
+[2021.08.24-17.07.04:563][446]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Rock3, compiling. 
+[2021.08.24-17.07.04:670][447]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Arrow, compiling. 
+[2021.08.24-17.07.04:676][447]LogMaterial: Display: Missing cached shader map for material FLightmassMaterialRenderer M_Arrow, compiling. 
+[2021.08.24-17.07.19:869][450]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 28
+[2021.08.24-17.07.19:869][450]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 20
+[2021.08.24-17.07.19:869][450]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 12
+[2021.08.24-17.07.19:869][450]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 8
+[2021.08.24-17.07.19:869][450]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 5
+[2021.08.24-17.07.19:869][450]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 3
+[2021.08.24-17.07.19:869][450]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 2
+[2021.08.24-17.07.19:869][450]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 1
+[2021.08.24-17.07.24:801][566]LogUObjectHash: Compacting FUObjectHashTables data took   3.27ms
+[2021.08.24-17.07.55:415][620]LightingResults: Warning: ArrowPointTextured Object has overlapping UVs.
+[2021.08.24-17.07.55:416][620]LightingResults: ArrowPointTextured Lightmap UV are overlapping by 75.0%. Please adjust content - Enable Error Coloring to visualize.
+[2021.08.24-17.08.32:409][  6]Job is a success!
+[2021.08.24-17.08.36:302][  7]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.215s
+[2021.08.24-17.08.36:302][  7]LogVolumetricLightmapImport:      Indirection Texture 32x32x32 = 0.1Mb
+[2021.08.24-17.08.36:303][  7]LogVolumetricLightmapImport:      BrickData (all levels) 3.4Mb
+[2021.08.24-17.08.36:303][  7]LogVolumetricLightmapImport:      Bricks at depth
+[2021.08.24-17.08.36:303][  7]LogVolumetricLightmapImport:          0: 1.3% covering 100.0% of volume
+[2021.08.24-17.08.36:303][  7]LogVolumetricLightmapImport:          1: 8.5% covering 10.0% of volume
+[2021.08.24-17.08.36:303][  7]LogVolumetricLightmapImport:          2: 90.1% covering 1.6% of volume
+[2021.08.24-17.08.36:303][  7]LogVolumetricLightmapImport:      Bricks in each level
+[2021.08.24-17.08.36:303][  7]LogVolumetricLightmapImport:          Chapter1 			 597 bricks 	 100.0% (Persistent Level)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 1024X1024)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 1024X1024)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: LQ_Lightmap_0_3 (DXT1, 1024X1024)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 1024X1024)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: HQ_Lightmap0_4 (AutoDXT, 128X128)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: LQ_Lightmap_0_4 (DXT1, 128X128)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: HQ_Lightmap0_5 (AutoDXT, 256X256)
+[2021.08.24-17.08.38:756][  7]LogTexture: Display: Building textures: LQ_Lightmap_0_5 (DXT1, 256X256)
+[2021.08.24-17.08.39:361][  7]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (G8, 128X64)
+[2021.08.24-17.08.39:361][  7]Lightmass on LAPTOP-NQ70B9PI: 1:10 min total, 679 ms importing, 114 ms setup, 3.97 sec photons, 1:05 min processing, 0 ms extra exporting [346/346 mappings]. Threads: 7:38 min total, 3:50 min processing.
+[2021.08.24-17.08.39:563][  7]LogStaticLightingSystem: Chapter1_BuiltData storing lightmap data for 84 meshes in 7 LightmapResourceClusters (12.0 Meshes per cluster).
+[2021.08.24-17.08.39:798][  7]LogMaterial: Display: Material /Game/Map/Material/M_Sand.M_Sand needed to have new flag set bUsedWithStaticLighting !
+[2021.08.24-17.08.40:044][  7]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2021.08.24-17.08.40:205][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 21
+[2021.08.24-17.08.40:205][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 15
+[2021.08.24-17.08.40:205][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 9
+[2021.08.24-17.08.40:205][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 3
+[2021.08.24-17.08.40:205][  7]LogMaterial: Display: Missing cached shader map for material M_Sand, compiling. 
+[2021.08.24-17.08.40:291][  7]LogMaterial: Display: Material /Game/Assets/M_Arrow.M_Arrow needed to have new flag set bUsedWithStaticLighting !
+[2021.08.24-17.08.40:414][  7]LogMaterial: Display: Missing cached shader map for material M_Arrow, compiling. 
+[2021.08.24-17.08.40:703][  7]LogMaterial: Display: Material /Game/Map/Material/Water/M_Water.M_Water needed to have new flag set bUsedWithStaticLighting !
+[2021.08.24-17.08.40:943][  7]LogMaterial: Display: Missing cached shader map for material M_Water, compiling. 
+[2021.08.24-17.08.41:225][  7]LogMaterial: Display: Material /Game/Assets/Trees/M_Palm.M_Palm needed to have new flag set bUsedWithStaticLighting !
+[2021.08.24-17.08.41:400][  7]LogMaterial: Display: Missing cached shader map for material M_Palm, compiling. 
+[2021.08.24-17.08.41:498][  7]LogMaterial: Display: Material /Game/Assets/Rock/M_Rock1.M_Rock1 needed to have new flag set bUsedWithStaticLighting !
+[2021.08.24-17.08.41:582][  7]LogMaterial: Display: Missing cached shader map for material M_Rock1, compiling. 
+[2021.08.24-17.08.41:632][  7]LogMaterial: Display: Material /Game/Assets/Rock/M_Rock2.M_Rock2 needed to have new flag set bUsedWithStaticLighting !
+[2021.08.24-17.08.41:721][  7]LogMaterial: Display: Missing cached shader map for material M_Rock2, compiling. 
+[2021.08.24-17.08.41:872][  7]LogMaterial: Display: Material /Game/Assets/Rock/M_Rock3.M_Rock3 needed to have new flag set bUsedWithStaticLighting !
+[2021.08.24-17.08.41:883][  7]LogMaterial: Display: Missing cached shader map for material M_Rock3, compiling. 
+[2021.08.24-17.08.42:136][  7]LogUObjectHash: Compacting FUObjectHashTables data took   4.80ms
+[2021.08.24-17.08.42:314][  7]LogStaticLightingSystem: Illumination: 2:43 min (1.79 sec encoding lightmaps, 86 ms encoding shadowmaps)
+[2021.08.24-17.08.42:314][  7]LogStaticLightingSystem: Lightmap texture memory:  6.2 MB (6.2 MB streaming, 0.0 MB non-streaming), 10 textures
+[2021.08.24-17.08.42:314][  7]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 1 textures
+[2021.08.24-17.08.48:185][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 275
+[2021.08.24-17.08.48:185][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 265
+[2021.08.24-17.08.48:185][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 255
+[2021.08.24-17.08.48:185][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 245
+[2021.08.24-17.08.48:185][  7]DumpUnbuiltLightIteractions
+[2021.08.24-17.08.48:185][  7]Lights with unbuilt interactions: 0
+[2021.08.24-17.08.48:185][  7]
+[2021.08.24-17.08.48:185][  7]Primitives with unbuilt interactions: 0
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 235
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 225
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 215
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 205
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 195
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 185
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 175
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 165
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 155
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 145
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 135
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 125
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 115
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 105
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 95
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 85
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 75
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 65
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 55
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 45
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 35
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 26
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 19
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 14
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 10
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 7
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 5
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 3
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 2
+[2021.08.24-17.09.42:620][  7]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 1
+[2021.08.24-17.09.43:148][  8]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.08.24-17.09.43:148][  8]MapCheck: New page: Chapter1 - Aug 25, 2021, 7:09:43 AM
+[2021.08.24-17.09.43:202][  8]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 54.027ms to complete.
+[2021.08.24-17.09.59:694][722]LogSlate: Window 'Message Log' being destroyed
+[2021.08.24-17.09.59:717][722]LogSlate: Window 'Message Log' being destroyed
+[2021.08.24-17.10.01:867][847]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2021.08.24-17.10.01:878][847]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.08.24-17.10.01:879][847]PIE: New page: PIE session: Chapter1 (Aug 25, 2021, 7:10:01 AM)
+[2021.08.24-17.10.01:892][847]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Chapter1
+[2021.08.24-17.10.01:948][847]LogPlayLevel: PIE: StaticDuplicateObject took: (0.055717s)
+[2021.08.24-17.10.01:949][847]LogAIModule: Creating AISystem for world Chapter1
+[2021.08.24-17.10.01:949][847]LogPlayLevel: PIE: World Init took: (0.001586s)
+[2021.08.24-17.10.01:949][847]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Chapter1.Chapter1 to /Game/Map/UEDPIE_0_Chapter1.Chapter1 (0.057613s)
+[2021.08.24-17.10.02:076][847]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2021.08.24-17.10.02:102][847]LogAudio: Display: Creating Audio Device:                 Id: 39, Scope: Unique, Realtime: True
+[2021.08.24-17.10.02:102][847]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.08.24-17.10.02:102][847]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.08.24-17.10.02:102][847]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.08.24-17.10.02:102][847]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.08.24-17.10.02:102][847]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.08.24-17.10.02:103][847]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.08.24-17.10.02:103][847]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.08.24-17.10.02:103][847]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.08.24-17.10.02:103][847]LogAudio: Display: Using built-in audio occlusion.
+[2021.08.24-17.10.02:103][847]LogAudioMixer: Display: Initializing audio mixer.
+[2021.08.24-17.10.02:181][847]LogAudioMixer: Display: 0: FrontLeft
+[2021.08.24-17.10.02:181][847]LogAudioMixer: Display: 1: FrontRight
+[2021.08.24-17.10.02:266][847]LogAudioMixer: Display: Using Audio Device Corsair HS50 (Realtek(R) Audio)
+[2021.08.24-17.10.02:266][847]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.08.24-17.10.02:266][847]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.08.24-17.10.02:266][847]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.08.24-17.10.02:268][847]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.08.24-17.10.02:268][847]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.08.24-17.10.02:268][847]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.08.24-17.10.02:308][847]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.08.24-17.10.02:308][847]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.08.24-17.10.02:308][847]LogInit: FAudioDevice initialized.
+[2021.08.24-17.10.02:308][847]LogAudio: Display: Audio Device (ID: 39) registered with world 'Chapter1'.
+[2021.08.24-17.10.02:357][847]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.08.24-17.10.02:357][847]LogLoad: Game class is '_MainGameMode_C'
+[2021.08.24-17.10.02:378][847]LogWorld: Bringing World /Game/Map/UEDPIE_0_Chapter1.Chapter1 up for play (max tick rate 60) at 2021.08.25-00.10.02
+[2021.08.24-17.10.02:382][847]LogWorld: Bringing up level for play took: 0.024342
+[2021.08.24-17.10.02:383][847]LogOnline: OSS: Creating online subsystem instance for: :Context_68
+[2021.08.24-17.10.02:477][847]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2021.08.24-17.10.02:477][847]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2021.08.24-17.10.02:480][847]PIE: Server logged in
+[2021.08.24-17.10.02:484][847]PIE: Play in editor total start time 0.606 seconds.
+[2021.08.24-17.10.31:185][836]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2021.08.24-17.10.31:185][836]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2021.08.24-17.10.55:430][517]LogBlueprintUserMessages: [BP_Character_C_0] STAMINA: 45.0
+[2021.08.24-17.10.56:451][555]LogBlueprintUserMessages: [BP_Character_C_0] STAMINA: 50.0
+[2021.08.24-17.10.59:071][647]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2021.08.24-17.10.59:071][647]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> NoCapture
+[2021.08.24-17.11.02:510][794]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.02:830][794]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.02:842][794]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.02:842][794]sg.ShadowQuality = "2"
+[2021.08.24-17.11.03:556][820]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.03:557][820]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.03:557][820]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.03:558][820]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.03:558][820]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.03:558][820]sg.ShadowQuality = "2"
+[2021.08.24-17.11.04:274][849]Cmd: sg.PostProcessQuality 1
+[2021.08.24-17.11.04:274][849]LogConfig: Applying CVar settings from Section [PostProcessQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.04:274][849]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:60]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DepthOfFieldQuality:1]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.RenderTargetPoolMin:350]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.FastBlurThreshold:2]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.Filter.SizeScale:0.7]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.Tonemapper.Quality:2]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:3                 ; low number of samples when gathering]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.04:769][849]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.04:769][849]sg.PostProcessQuality = "1"
+[2021.08.24-17.11.05:298][868]Cmd: sg.PostProcessQuality 1
+[2021.08.24-17.11.05:299][868]LogConfig: Applying CVar settings from Section [PostProcessQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:60]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.DepthOfFieldQuality:1]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.RenderTargetPoolMin:350]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.FastBlurThreshold:2]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.Filter.SizeScale:0.7]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.Tonemapper.Quality:2]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.05:299][868]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.05:300][868]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.05:300][868]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:3                 ; low number of samples when gathering]]
+[2021.08.24-17.11.05:300][868]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.05:300][868]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.05:300][868]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.05:300][868]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.05:300][868]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.05:300][868]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.05:300][868]sg.PostProcessQuality = "1"
+[2021.08.24-17.11.05:830][887]Cmd: sg.ShadowQuality 3
+[2021.08.24-17.11.05:830][887]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.05:830][887]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.08.24-17.11.05:831][887]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.05:831][887]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.08.24-17.11.05:831][887]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.08.24-17.11.05:831][887]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.05:831][887]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.05:831][887]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.05:831][887]sg.ShadowQuality = "3"
+[2021.08.24-17.11.05:870][888]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 9 NumSamples 1 (Frame:2044).
+[2021.08.24-17.11.07:451][944]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2021.08.24-17.11.07:452][944]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2021.08.24-17.11.16:777][297]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2021.08.24-17.11.16:777][297]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> NoCapture
+[2021.08.24-17.11.18:600][368]Cmd: sg.ShadowQuality 3
+[2021.08.24-17.11.18:601][368]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.18:601][368]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.18:601][368]sg.ShadowQuality = "3"
+[2021.08.24-17.11.19:099][387]Cmd: sg.PostProcessQuality 2
+[2021.08.24-17.11.19:099][387]LogConfig: Applying CVar settings from Section [PostProcessQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.19:121][387]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.19:121][387]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.6]]
+[2021.08.24-17.11.19:121][387]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.FastBlurThreshold:3]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.Filter.SizeScale:0.8]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:1    ; no background occlusion]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:0      ; no bokeh simulation when scattering]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.04        ; only a maximum of 4% of scattered bokeh]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.08.24-17.11.19:122][387]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.08.24-17.11.19:122][387]sg.PostProcessQuality = "2"
+[2021.08.24-17.11.19:631][401]Cmd: sg.TextureQuality 2
+[2021.08.24-17.11.19:632][401]LogConfig: Applying CVar settings from Section [TextureQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.MaxAnisotropy:4]]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.Streaming.PoolSize:800]]
+[2021.08.24-17.11.19:632][401]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.08.24-17.11.19:633][401]sg.TextureQuality = "2"
+[2021.08.24-17.11.20:252][401]Cmd: r.ScreenPercentage 100
+[2021.08.24-17.11.20:252][401]r.ScreenPercentage = "100"
+[2021.08.24-17.11.21:303][404]LogContentStreaming: Texture pool size now 800 MB
+[2021.08.24-17.11.21:617][416]Cmd: r.ScreenPercentage 100
+[2021.08.24-17.11.21:617][416]r.ScreenPercentage = "100"
+[2021.08.24-17.11.23:503][486]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2021.08.24-17.11.23:503][486]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2021.08.24-17.11.29:792][674]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2021.08.24-17.11.29:792][674]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> NoCapture
+[2021.08.24-17.11.31:215][729]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.31:215][729]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.31:215][729]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.31:216][729]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.31:216][729]sg.ShadowQuality = "2"
+[2021.08.24-17.11.31:252][730]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 9 NumSamples 1 (Frame:2886).
+[2021.08.24-17.11.31:630][746]Cmd: sg.PostProcessQuality 1
+[2021.08.24-17.11.31:631][746]LogConfig: Applying CVar settings from Section [PostProcessQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:60]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.DepthOfFieldQuality:1]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.RenderTargetPoolMin:350]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.31:631][746]LogConfig: Setting CVar [[r.FastBlurThreshold:2]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.Filter.SizeScale:0.7]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.Tonemapper.Quality:2]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:3                 ; low number of samples when gathering]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.31:632][746]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.31:632][746]sg.PostProcessQuality = "1"
+[2021.08.24-17.11.32:131][768]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.32:131][768]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.32:131][768]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.32:131][768]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.32:131][768]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.32:131][768]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.32:131][768]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.32:131][768]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.32:131][768]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.32:132][768]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.32:132][768]sg.ShadowQuality = "2"
+[2021.08.24-17.11.32:473][782]Cmd: sg.PostProcessQuality 1
+[2021.08.24-17.11.32:473][782]LogConfig: Applying CVar settings from Section [PostProcessQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.32:473][782]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.32:473][782]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.32:473][782]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:60]]
+[2021.08.24-17.11.32:473][782]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.32:473][782]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.DepthOfFieldQuality:1]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.RenderTargetPoolMin:350]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.FastBlurThreshold:2]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.Filter.SizeScale:0.7]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.Tonemapper.Quality:2]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:3                 ; low number of samples when gathering]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.32:474][782]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.32:475][782]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.32:475][782]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.32:475][782]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.32:475][782]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.32:475][782]sg.PostProcessQuality = "1"
+[2021.08.24-17.11.32:826][796]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.32:827][796]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.32:827][796]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.32:828][796]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.32:828][796]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.32:828][796]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.32:828][796]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.32:828][796]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.32:828][796]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.32:828][796]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.32:828][796]sg.ShadowQuality = "2"
+[2021.08.24-17.11.33:902][837]Cmd: sg.TextureQuality 1
+[2021.08.24-17.11.33:902][837]LogConfig: Applying CVar settings from Section [TextureQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.33:902][837]LogConfig: Setting CVar [[r.Streaming.MipBias:1]]
+[2021.08.24-17.11.33:902][837]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.08.24-17.11.33:902][837]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.08.24-17.11.33:902][837]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.08.24-17.11.33:903][837]LogConfig: Setting CVar [[r.MaxAnisotropy:2]]
+[2021.08.24-17.11.33:903][837]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:4]]
+[2021.08.24-17.11.33:903][837]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.08.24-17.11.33:903][837]LogConfig: Setting CVar [[r.Streaming.PoolSize:600]]
+[2021.08.24-17.11.33:903][837]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.08.24-17.11.33:903][837]sg.TextureQuality = "1"
+[2021.08.24-17.11.33:925][838]LogContentStreaming: Texture pool size now 600 MB
+[2021.08.24-17.11.34:389][858]Cmd: r.ScreenPercentage 100
+[2021.08.24-17.11.34:389][858]r.ScreenPercentage = "100"
+[2021.08.24-17.11.37:099][978]Cmd: r.ScreenPercentage 50
+[2021.08.24-17.11.37:099][978]r.ScreenPercentage = "50"
+[2021.08.24-17.11.37:555][980]Cmd: sg.TextureQuality 0
+[2021.08.24-17.11.37:556][980]LogConfig: Applying CVar settings from Section [TextureQuality@0] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.Streaming.MipBias:16]]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:1]]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:1]]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.Streaming.Boost:0.3]]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.MaxAnisotropy:0]]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:4]]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.Streaming.PoolSize:400]]
+[2021.08.24-17.11.37:556][980]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.08.24-17.11.37:556][980]sg.TextureQuality = "0"
+[2021.08.24-17.11.37:666][985]LogContentStreaming: Texture pool size now 400 MB
+[2021.08.24-17.11.37:943][  0]Cmd: sg.TextureQuality 0
+[2021.08.24-17.11.37:943][  0]LogConfig: Applying CVar settings from Section [TextureQuality@0] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:16]]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:1]]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:1]]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.Streaming.Boost:0.3]]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:0]]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:4]]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:400]]
+[2021.08.24-17.11.37:943][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.08.24-17.11.37:943][  0]sg.TextureQuality = "0"
+[2021.08.24-17.11.38:645][ 38]Cmd: sg.ShadowQuality 0
+[2021.08.24-17.11.38:646][ 38]LogConfig: Applying CVar settings from Section [ShadowQuality@0] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.LightFunctionQuality:0]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.ShadowQuality:0]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:1]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.Shadow.MaxResolution:512]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:512]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.06]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.6]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.DistanceFieldShadowing:0]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.DistanceFieldAO:0]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.VolumetricFog:0]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:0]]
+[2021.08.24-17.11.38:646][ 38]LogConfig: Setting CVar [[r.CapsuleShadows:0]]
+[2021.08.24-17.11.38:646][ 38]sg.ShadowQuality = "0"
+[2021.08.24-17.11.38:666][ 39]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 9 NumSamples 1 (Frame:3195).
+[2021.08.24-17.11.38:894][ 49]Cmd: sg.PostProcessQuality 0
+[2021.08.24-17.11.38:894][ 49]LogConfig: Applying CVar settings from Section [PostProcessQuality@0] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.MotionBlurQuality:0]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:0]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:0]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.2]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.DepthOfFieldQuality:0]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.RenderTargetPoolMin:300]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.FastBlurThreshold:0]]
+[2021.08.24-17.11.38:894][ 49]LogConfig: Setting CVar [[r.Upscale.Quality:1]]
+[2021.08.24-17.11.38:895][ 49]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.38:895][ 49]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.38:895][ 49]LogConfig: Setting CVar [[r.Filter.SizeScale:0.6]]
+[2021.08.24-17.11.38:895][ 49]LogConfig: Setting CVar [[r.Tonemapper.Quality:0]]
+[2021.08.24-17.11.38:895][ 49]sg.PostProcessQuality = "0"
+[2021.08.24-17.11.39:074][ 55]Cmd: sg.PostProcessQuality 0
+[2021.08.24-17.11.39:075][ 55]LogConfig: Applying CVar settings from Section [PostProcessQuality@0] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.MotionBlurQuality:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.2]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.DepthOfFieldQuality:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.RenderTargetPoolMin:300]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.FastBlurThreshold:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.Upscale.Quality:1]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.Filter.SizeScale:0.6]]
+[2021.08.24-17.11.39:075][ 55]LogConfig: Setting CVar [[r.Tonemapper.Quality:0]]
+[2021.08.24-17.11.39:076][ 55]sg.PostProcessQuality = "0"
+[2021.08.24-17.11.40:549][131]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2021.08.24-17.11.40:549][131]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2021.08.24-17.11.43:332][291]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2021.08.24-17.11.43:332][291]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> NoCapture
+[2021.08.24-17.11.44:870][380]Cmd: r.ScreenPercentage 100
+[2021.08.24-17.11.44:870][380]r.ScreenPercentage = "100"
+[2021.08.24-17.11.46:094][445]Cmd: sg.TextureQuality 0
+[2021.08.24-17.11.46:094][445]LogConfig: Applying CVar settings from Section [TextureQuality@0] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.46:094][445]LogConfig: Setting CVar [[r.Streaming.MipBias:16]]
+[2021.08.24-17.11.46:094][445]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:1]]
+[2021.08.24-17.11.46:094][445]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:1]]
+[2021.08.24-17.11.46:094][445]LogConfig: Setting CVar [[r.Streaming.Boost:0.3]]
+[2021.08.24-17.11.46:095][445]LogConfig: Setting CVar [[r.MaxAnisotropy:0]]
+[2021.08.24-17.11.46:095][445]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:4]]
+[2021.08.24-17.11.46:095][445]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.08.24-17.11.46:095][445]LogConfig: Setting CVar [[r.Streaming.PoolSize:400]]
+[2021.08.24-17.11.46:095][445]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.08.24-17.11.46:095][445]sg.TextureQuality = "0"
+[2021.08.24-17.11.46:988][491]Cmd: sg.PostProcessQuality 1
+[2021.08.24-17.11.46:988][491]LogConfig: Applying CVar settings from Section [PostProcessQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.46:988][491]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.46:988][491]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.46:988][491]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:60]]
+[2021.08.24-17.11.46:988][491]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.46:988][491]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.46:988][491]LogConfig: Setting CVar [[r.DepthOfFieldQuality:1]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.RenderTargetPoolMin:350]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.FastBlurThreshold:2]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.Filter.SizeScale:0.7]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.Tonemapper.Quality:2]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:3                 ; low number of samples when gathering]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.46:989][491]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.46:989][491]sg.PostProcessQuality = "1"
+[2021.08.24-17.11.47:662][519]Cmd: sg.PostProcessQuality 2
+[2021.08.24-17.11.47:662][519]LogConfig: Applying CVar settings from Section [PostProcessQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.6]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.FastBlurThreshold:3]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.Filter.SizeScale:0.8]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:1    ; no background occlusion]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:0      ; no bokeh simulation when scattering]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.04        ; only a maximum of 4% of scattered bokeh]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.08.24-17.11.47:663][519]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.08.24-17.11.47:663][519]sg.PostProcessQuality = "2"
+[2021.08.24-17.11.48:257][545]Cmd: sg.PostProcessQuality 1
+[2021.08.24-17.11.48:257][545]LogConfig: Applying CVar settings from Section [PostProcessQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.48:257][545]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.48:257][545]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.48:257][545]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:60]]
+[2021.08.24-17.11.48:257][545]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.48:257][545]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.48:257][545]LogConfig: Setting CVar [[r.DepthOfFieldQuality:1]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.RenderTargetPoolMin:350]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.FastBlurThreshold:2]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.Filter.SizeScale:0.7]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.Tonemapper.Quality:2]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:3                 ; low number of samples when gathering]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.48:258][545]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.48:258][545]sg.PostProcessQuality = "1"
+[2021.08.24-17.11.48:524][557]Cmd: sg.PostProcessQuality 2
+[2021.08.24-17.11.48:525][557]LogConfig: Applying CVar settings from Section [PostProcessQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.48:525][557]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.48:525][557]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.6]]
+[2021.08.24-17.11.48:525][557]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.08.24-17.11.48:525][557]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.FastBlurThreshold:3]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.Filter.SizeScale:0.8]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:1    ; no background occlusion]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:0      ; no bokeh simulation when scattering]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.04        ; only a maximum of 4% of scattered bokeh]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.48:526][557]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.08.24-17.11.48:527][557]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.08.24-17.11.48:527][557]sg.PostProcessQuality = "2"
+[2021.08.24-17.11.48:767][568]Cmd: sg.PostProcessQuality 1
+[2021.08.24-17.11.48:767][568]LogConfig: Applying CVar settings from Section [PostProcessQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.48:767][568]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.48:767][568]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:60]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DepthOfFieldQuality:1]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.RenderTargetPoolMin:350]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.FastBlurThreshold:2]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.Filter.SizeScale:0.7]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.Tonemapper.Quality:2]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:3                 ; low number of samples when gathering]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.48:768][568]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.48:769][568]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.48:769][568]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.48:769][568]sg.PostProcessQuality = "1"
+[2021.08.24-17.11.49:184][586]Cmd: sg.PostProcessQuality 2
+[2021.08.24-17.11.49:185][586]LogConfig: Applying CVar settings from Section [PostProcessQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.49:185][586]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.49:185][586]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.6]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.FastBlurThreshold:3]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.Filter.SizeScale:0.8]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:1    ; no background occlusion]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:0      ; no bokeh simulation when scattering]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.04        ; only a maximum of 4% of scattered bokeh]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.08.24-17.11.49:186][586]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2021.08.24-17.11.49:186][586]sg.PostProcessQuality = "2"
+[2021.08.24-17.11.49:414][595]Cmd: sg.PostProcessQuality 1
+[2021.08.24-17.11.49:415][595]LogConfig: Applying CVar settings from Section [PostProcessQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.49:415][595]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2021.08.24-17.11.49:415][595]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:1.0]]
+[2021.08.24-17.11.49:415][595]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:60]]
+[2021.08.24-17.11.49:415][595]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.08.24-17.11.49:415][595]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2021.08.24-17.11.49:415][595]LogConfig: Setting CVar [[r.DepthOfFieldQuality:1]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.RenderTargetPoolMin:350]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.BloomQuality:4]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.FastBlurThreshold:2]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:0]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.LightShaftQuality:0]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.Filter.SizeScale:0.7]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.Tonemapper.Quality:2]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:3                 ; low number of samples when gathering]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:0    ; no foreground scattering]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.49:416][595]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.006   ; required because low gathering and no scattering and not looking great at 1080p]]
+[2021.08.24-17.11.49:416][595]sg.PostProcessQuality = "1"
+[2021.08.24-17.11.50:078][622]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.50:079][622]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.50:079][622]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.50:079][622]sg.ShadowQuality = "2"
+[2021.08.24-17.11.50:121][623]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 9 NumSamples 1 (Frame:3779).
+[2021.08.24-17.11.50:234][627]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.50:235][627]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.50:235][627]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.50:236][627]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.50:236][627]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.50:236][627]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.50:236][627]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.50:236][627]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.50:236][627]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.50:236][627]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.50:236][627]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.50:236][627]sg.ShadowQuality = "2"
+[2021.08.24-17.11.50:718][647]Cmd: sg.ShadowQuality 3
+[2021.08.24-17.11.50:719][647]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.50:719][647]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.50:720][647]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.50:720][647]sg.ShadowQuality = "3"
+[2021.08.24-17.11.50:750][648]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 9 NumSamples 1 (Frame:3804).
+[2021.08.24-17.11.50:914][654]Cmd: sg.ShadowQuality 3
+[2021.08.24-17.11.50:914][654]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.50:914][654]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.50:914][654]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.50:914][654]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.08.24-17.11.50:914][654]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.50:915][654]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.50:915][654]sg.ShadowQuality = "3"
+[2021.08.24-17.11.51:183][664]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.51:184][664]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.51:184][664]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.51:185][664]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.51:185][664]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.51:185][664]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.51:185][664]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.51:185][664]sg.ShadowQuality = "2"
+[2021.08.24-17.11.51:220][665]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 9 NumSamples 1 (Frame:3821).
+[2021.08.24-17.11.51:336][670]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.51:336][670]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.51:337][670]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.51:337][670]sg.ShadowQuality = "2"
+[2021.08.24-17.11.51:481][676]Cmd: sg.ShadowQuality 2
+[2021.08.24-17.11.51:482][676]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.08.24-17.11.51:482][676]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.08.24-17.11.51:482][676]sg.ShadowQuality = "2"
+[2021.08.24-17.11.51:995][696]Cmd: sg.TextureQuality 1
+[2021.08.24-17.11.51:995][696]LogConfig: Applying CVar settings from Section [TextureQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.Streaming.MipBias:1]]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.MaxAnisotropy:2]]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:4]]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.Streaming.PoolSize:600]]
+[2021.08.24-17.11.51:996][696]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.08.24-17.11.51:996][696]sg.TextureQuality = "1"
+[2021.08.24-17.11.52:073][699]LogContentStreaming: Texture pool size now 600 MB
+[2021.08.24-17.11.52:140][702]Cmd: sg.TextureQuality 1
+[2021.08.24-17.11.52:140][702]LogConfig: Applying CVar settings from Section [TextureQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.52:140][702]LogConfig: Setting CVar [[r.Streaming.MipBias:1]]
+[2021.08.24-17.11.52:140][702]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.08.24-17.11.52:140][702]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.08.24-17.11.52:140][702]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.08.24-17.11.52:141][702]LogConfig: Setting CVar [[r.MaxAnisotropy:2]]
+[2021.08.24-17.11.52:141][702]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:4]]
+[2021.08.24-17.11.52:141][702]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.08.24-17.11.52:141][702]LogConfig: Setting CVar [[r.Streaming.PoolSize:600]]
+[2021.08.24-17.11.52:141][702]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.08.24-17.11.52:141][702]sg.TextureQuality = "1"
+[2021.08.24-17.11.52:330][708]Cmd: sg.TextureQuality 1
+[2021.08.24-17.11.52:331][708]LogConfig: Applying CVar settings from Section [TextureQuality@1] File [Y:/UE4/COMPFEST13/Compfest13/Saved/Config/Windows/Scalability.ini]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.Streaming.MipBias:1]]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.MaxAnisotropy:2]]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:4]]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.Streaming.PoolSize:600]]
+[2021.08.24-17.11.52:331][708]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.08.24-17.11.52:331][708]sg.TextureQuality = "1"
+[2021.08.24-17.11.53:622][757]Cmd: r.ScreenPercentage 100
+[2021.08.24-17.11.53:622][757]r.ScreenPercentage = "100"
+[2021.08.24-17.11.53:760][763]Cmd: r.ScreenPercentage 100
+[2021.08.24-17.11.53:760][763]r.ScreenPercentage = "100"
+[2021.08.24-17.11.55:153][822]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2021.08.24-17.11.55:153][822]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2021.08.24-17.12.02:885][159]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.08.24-17.12.02:885][159]LogWorld: BeginTearingDown for /Game/Map/UEDPIE_0_Chapter1
+[2021.08.24-17.12.02:886][159]LogSlate: Window 'LegendsOfArchipelago Preview [NetMode: Standalone]  (64-bit/Windows) ' being destroyed
+[2021.08.24-17.12.02:893][159]LogWorld: UWorld::CleanupWorld for Chapter1, bSessionEnded=true, bCleanupResources=true
+[2021.08.24-17.12.02:901][159]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.08.24-17.12.02:921][159]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.08.24-17.12.02:941][159]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.08.24-17.12.02:976][159]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.08.24-17.12.02:977][159]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.08.24-17.12.03:014][159]LogUObjectHash: Compacting FUObjectHashTables data took   3.40ms
+[2021.08.24-17.12.03:425][160]LogPlayLevel: Display: Destroying online subsystem :Context_68
+[2021.08.24-17.12.06:544][262]LogEditorViewport: Clicking Background
+[2021.08.24-17.12.08:137][343]LogUObjectHash: Compacting FUObjectHashTables data took   2.19ms
+[2021.08.24-17.12.08:201][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Chapter1" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Chapter1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.08.24-17.12.08:232][343]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2021.08.24-17.12.08:659][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/Chapter1B1AAF63B4078A22ED0DB59ABBEE93396.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Chapter1.umap'
+[2021.08.24-17.12.08:674][343]LogFileHelpers: Saving map 'Chapter1' took 0.475
+[2021.08.24-17.12.08:675][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Chapter1_BuiltData" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Chapter1_BuiltData.uasset" SILENT=true
+[2021.08.24-17.12.09:180][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/Chapter1_BuiltDataA2743067419615E1FB3661ABAFA61707.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Chapter1_BuiltData.uasset'
+[2021.08.24-17.12.09:246][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Rock/M_Rock1" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/Rock/M_Rock1.uasset" SILENT=true
+[2021.08.24-17.12.09:406][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/M_Rock10348F59540C80EC18EB6CF84B42CB983.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/Rock/M_Rock1.uasset'
+[2021.08.24-17.12.09:432][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Rock/M_Rock2" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/Rock/M_Rock2.uasset" SILENT=true
+[2021.08.24-17.12.09:439][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/M_Rock245C7962740448083C6E76B840815189F.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/Rock/M_Rock2.uasset'
+[2021.08.24-17.12.09:464][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Rock/M_Rock3" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/Rock/M_Rock3.uasset" SILENT=true
+[2021.08.24-17.12.09:490][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/M_Rock39E0844B445EAED1E86EFE2833F1F4CC3.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/Rock/M_Rock3.uasset'
+[2021.08.24-17.12.09:517][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Trees/M_Palm" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/Trees/M_Palm.uasset" SILENT=true
+[2021.08.24-17.12.09:548][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/M_Palm0464B6AD4DE9BA2A4EF4F7BBB1C16D72.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/Trees/M_Palm.uasset'
+[2021.08.24-17.12.09:595][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Material/M_Sand" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Material/M_Sand.uasset" SILENT=true
+[2021.08.24-17.12.09:667][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/M_SandC5C653354EEA13B4ACE3CAB13E3556AE.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Material/M_Sand.uasset'
+[2021.08.24-17.12.09:698][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Material/Water/MI_Water" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Material/Water/MI_Water.uasset" SILENT=true
+[2021.08.24-17.12.09:707][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/MI_WaterEC572D634C48045A1E02AF9201EDB4F1.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Material/Water/MI_Water.uasset'
+[2021.08.24-17.12.09:730][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Material/Water/M_Water" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Material/Water/M_Water.uasset" SILENT=true
+[2021.08.24-17.12.09:778][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/M_Water2A8FF1E44EC401F0C7AC0AA721F2CCDE.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Material/Water/M_Water.uasset'
+[2021.08.24-17.12.09:824][343]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/M_Arrow" FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/M_Arrow.uasset" SILENT=true
+[2021.08.24-17.12.09:853][343]LogSavePackage: Moving '../../../../../../UE4/COMPFEST13/Compfest13/Saved/M_Arrow4E4F399D40DD12B9D40778BAE396FDF1.tmp' to '../../../../../../UE4/COMPFEST13/Compfest13/Content/Assets/M_Arrow.uasset'
+[2021.08.24-17.12.10:027][343]AssetCheck: New page: Asset Save: multiple assets
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating Material /Game/Assets/Rock/M_Rock1.M_Rock1
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating Material /Game/Assets/Rock/M_Rock2.M_Rock2
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating Material /Game/Assets/Rock/M_Rock3.M_Rock3
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating Material /Game/Assets/Trees/M_Palm.M_Palm
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating Material /Game/Map/Material/M_Sand.M_Sand
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating Material /Game/Map/Material/Water/M_Water.M_Water
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Map/Material/Water/MI_Water.MI_Water
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating Material /Game/Assets/M_Arrow.M_Arrow
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Map/Chapter1_BuiltData.Chapter1_BuiltData
+[2021.08.24-17.12.10:027][343]LogContentValidation: Display: Validating World /Game/Map/Chapter1.Chapter1
+[2021.08.24-17.12.15:104][610]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2021.08.24-17.12.17:687][610]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Map/Tutorial.Tutorial
+[2021.08.24-17.12.17:688][610]Cmd: MAP LOAD FILE="../../../../../../UE4/COMPFEST13/Compfest13/Content/Map/Tutorial.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.08.24-17.12.17:688][610]LightingResults: New page: Lighting Build
+[2021.08.24-17.12.17:688][610]LoadErrors: New page: Loading map: Tutorial.umap
+[2021.08.24-17.12.17:728][610]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2021.08.24-17.12.17:729][610]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.08.24-17.12.18:088][610]LogWorld: UWorld::CleanupWorld for Chapter1, bSessionEnded=true, bCleanupResources=true
+[2021.08.24-17.12.18:089][610]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.08.24-17.12.18:089][610]MapCheck: New page: Map Check
+[2021.08.24-17.12.18:113][610]LightingResults: New page: Lighting Build
+[2021.08.24-17.12.18:168][610]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.08.24-17.12.18:323][610]LogUObjectHash: Compacting FUObjectHashTables data took   5.11ms
+[2021.08.24-17.12.18:351][610]LogAudio: Display: Audio Device (ID: 1) registered with world 'Tutorial'.
+[2021.08.24-17.12.19:943][610]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.08.24-17.12.19:943][610]LogAIModule: Creating AISystem for world Tutorial
+[2021.08.24-17.12.19:993][610]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2021.08.24-17.12.20:002][610]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.08.24-17.12.20:002][610]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.137ms to complete.
+[2021.08.24-17.12.20:002][610]LogFileHelpers: Loading map 'Tutorial' took 2.314
